@@ -221,4 +221,5 @@ endfunc
 
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
+"设置hidden属性
 set hidden
