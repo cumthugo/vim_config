@@ -220,10 +220,5 @@ func SetTitle()
 endfunc 
 
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
-  
 
-
-
-
-
-
+set hidden
