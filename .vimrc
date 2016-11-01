@@ -23,7 +23,8 @@ syntax enable
 "colorscheme  pablo
 "colorscheme  evening
 "colorscheme  slate
-colorscheme  solarized
+"colorscheme  solarized
+colorscheme default
 set background=dark
 "if has('gui_running')
 "    set background=light
@@ -50,7 +51,7 @@ set nu
 set showcmd         " 输入的命令显示出来，看的清楚些
 
 set ruler                   " 打开状态栏标尺
-set cursorline              " 突出显示当前行
+"set cursorline              " 突出显示当前行
 "set magic                   " 设置魔术
 set guioptions-=T           " 隐藏工具栏
 set guioptions-=m           " 隐藏菜单栏
@@ -88,7 +89,7 @@ set showmatch
 set hlsearch
 
 "粘贴插入
-set paste
+"set paste
 
 "快速匹配    
 set incsearch
@@ -120,7 +121,7 @@ set autochdir
 """""""""""""""""Taglist设置"""""""""""""""""         
 map <F4> : Tlist<CR>  ""按下F4就可以呼出了
 let Tlist_Auto_Open = 0  "在启动VIM后，自动打开taglist窗口
-let Tlist_Ctags_Cmd = '/usr/bin/ctags'  "设定ctags的位置
+let Tlist_Ctags_Cmd = 'ctags'  "设定ctags的位置
 let Tlist_Use_Right_Window=1 " 1为让窗口显示在右边，0为显示在左边
 let Tlist_Show_One_File=0 "让taglist可以同时展示多个文件的函数列表，设置为1时不同时显示>多个文件的tag，只显示当前文件的
 let Tlist_File_Fold_Auto_Close=1 "同时显示多个文件中的tag时，taglist只显示当前文件tag，>其他文件的函数列表折叠隐藏
@@ -131,8 +132,8 @@ let Tlist_Exit_OnlyWindow=1 "当taglist是最后一个分割窗口时，自动�
 """"""""""""""""""""""winManage"""""""""""""""""""
 "let g:winManagerWindowLayout='FileExplorer|TagList'
 "let g:winManagerWindowLayout='TagList'
-let g:winManagerWindowLayout='FileExplorer'
-nmap wm :WMToggle<cr>
+"let g:winManagerWindowLayout='FileExplorer'
+"nmap wm :WMToggle<cr>
 
 """""""""""""""""""""VisualMark"""""""""""""""""""
 "mm
@@ -223,3 +224,14 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 "设置hidden属性
 set hidden
+
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
+
+
+let g:cpp_class_scope_highlight = 1
+let g:cpp_experimental_simple_template_highlight = 1
+let g:cpp_concepts_highlight = 1
+
+hi Comment ctermfg = darkgrey
